@@ -12,7 +12,7 @@ The focus throughout the development of this project has been on understanding t
 
 In the current state, this project consists of the following features:
 
-Leader election: term-based elections and voting between nodes 
+- Leader election: term-based elections and voting between nodes 
 Voting safeguards: It rejects stale term requests and checks candidate log freshness
 -Log replication: It sends log entries from the leader to followers over HTTP -Log consistency: It validates previous log indexes and terms, handles conflicting uncommitted entries and protects the committed entries -Majority-based commitment: It uses replication acknowledgements and the current term commitment rule 
 -Key value state machine: It applies committed operations to the key- value store
@@ -60,7 +60,6 @@ raft-kv-store/
 │   ├── kv/                   
 │   └── raft/                 
 ├── go.mod
-├── go.sum
 └── README.md
 ```
 
